@@ -1,0 +1,2 @@
+#!/bin/bash
+gnuplot -p -e "set terminal pngcairo size 350,262 enhanced font 'Verdana,10';set output 'figure1.png';set title 'N=10';set xlabel 'x';set ylabel 'u(x)';plot 'output_project1_4.dat' using 1:2 with lines title 'My Algorithm', 'output_project1_4.dat' using 1:3 with lines title 'Analytic Solution'";
